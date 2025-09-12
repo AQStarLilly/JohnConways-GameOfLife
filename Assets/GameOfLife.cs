@@ -6,12 +6,10 @@ public class GameOfLife : MonoBehaviour
 {
     public int width = 20;
     public int height = 20;
-    //public float updateInterval = 0.5f;
     public GameObject cellPrefab;
 
     private bool[,] grid;  //stores whether cell is dead or alive
     private GameObject[,] cellObjects;  //reference to the cell gameObjects
-    //private float timer;
 
     void Start()
     {
