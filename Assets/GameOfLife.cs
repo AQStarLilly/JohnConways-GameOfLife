@@ -60,12 +60,12 @@ public class GameOfLife : MonoBehaviour
 
                 if (grid[x, y])
                 {
-                    //Rule 1 and 2: Alive cell stays alive with 2 or 3 neighbors
+                    //Alive cell stays alive with 2 or 3 neighbors
                     newGrid[x, y] = (neighbors == 2 || neighbors == 3);
                 }
                 else
                 {
-                    //Rule 3: Dead cell becomes alive if it has exactly 3 neighbors
+                    //Dead cell becomes alive if it has exactly 3 neighbors
                     newGrid[x, y] = (neighbors == 3);
                 }
             }
